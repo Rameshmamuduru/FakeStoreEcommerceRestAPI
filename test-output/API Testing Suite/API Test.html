@@ -1,0 +1,270 @@
+<html>
+<head>
+<title>TestNG:  API Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>API Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 30 14:38:49 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31554 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.ProductTests.testGetAllProducts()'><b>testGetAllProducts</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.CartTests.getCartItemsInRange()'><b>getCartItemsInRange</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.CartTests.getCartItemsSorted()'><b>getCartItemsSorted</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Levi's Denim Jeans, price=59.99, description=Regular fit blue denim jeans, category=clothing, image=https://example.com/images/levis-jeans.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.UserTests.updateUser()'><b>updateUser</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@1f9f6368</td></tr>
+<tr>
+<td title='testcases.ProductTests.testGetAllCategories()'><b>testGetAllCategories</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Samsung Galaxy S24, price=799.99, description=Samsung Galaxy S24 smartphone with 256GB storage, category=electronics, image=https://example.com/images/samsung-s24.jpg}</td>
+<td></td>
+<td>3</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Men's Analog Watch, price=120.00, description=Classic analog wristwatch with leather strap, category=accessories, image=https://example.com/images/analog-watch.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.CartTests.partialItemUpdateInCart()'><b>partialItemUpdateInCart</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.UserTests.partialUpdateUser()'><b>partialUpdateUser</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@1f9f6368</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Adidas Sports T-Shirt, price=29.99, description=Comfortable sports t-shirt made from breathable fabric, category=clothing, image=https://example.com/images/adidas-tshirt.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductTests.testUpdateProduct()'><b>testUpdateProduct</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Dell Inspiron Laptop, price=649.50, description=Dell laptop with 16GB RAM and 512GB SSD, category=electronics, image=https://example.com/images/dell-laptop.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductTests.testGetProductById()'><b>testGetProductById</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.ProductTests.testGetPruductWithLimit()'><b>testGetPruductWithLimit</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.UserTests.createUser()'><b>createUser</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>2</td>
+<td>testcases.UserTests@1f9f6368</td></tr>
+<tr>
+<td title='testcases.ProductTests.testGetProductByCategory()'><b>testGetProductByCategory</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Gaming Keyboard, price=75.00, description=Mechanical gaming keyboard with RGB lighting, category=electronics, image=https://example.com/images/gaming-keyboard.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Office Ergonomic Chair, price=249.99, description=Adjustable ergonomic chair with lumbar support, category=furniture, image=https://example.com/images/office-chair.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Ceramic Coffee Mug, price=8.50, description=White ceramic coffee mug with 350ml capacity, category=home, image=https://example.com/images/coffee-mug.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.CartTests.addItemsToCart()'><b>addItemsToCart</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Stainless Steel Water Bottle, price=19.99, description=Reusable insulated stainless steel water bottle, category=accessories, image=https://example.com/images/water-bottle.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Apple iPhone 15, price=899.99, description=Apple iPhone 15 with 128GB storage, category=electronics, image=https://example.com/images/iphone-15.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.CartTests.getCartItemswithID()'><b>getCartItemswithID</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Organic Cotton Bedsheet, price=39.99, description=Queen size organic cotton bedsheet, category=home, image=https://example.com/images/bedsheet.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Wooden Study Table, price=199.99, description=Modern wooden study table for home and office, category=furniture, image=https://example.com/images/study-table.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductTests.testDeleteProduct()'><b>testDeleteProduct</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.ProductTests.testCreateProduct()'><b>testCreateProduct</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.CartTests.getCartItemswithLimit()'><b>getCartItemswithLimit</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.UserTests.getAllUsers()'><b>getAllUsers</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>1</td>
+<td>testcases.UserTests@1f9f6368</td></tr>
+<tr>
+<td title='testcases.ProductTests.testProductSorted()'><b>testProductSorted</b><br>Test class: testcases.ProductTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductTests@49c90a9c</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Nike Running Shoes, price=89.99, description=Lightweight running shoes for daily workouts, category=footwear, image=https://example.com/images/nike-shoes.jpg}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Leather Backpack, price=95.00, description=Premium leather backpack for everyday use, category=accessories, image=https://example.com/images/backpack.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.UserTests.userLogin()'><b>userLogin</b><br>Test class: testcases.UserTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.UserTests@1f9f6368</td></tr>
+<tr>
+<td title='testcases.CartTests.DeleteItemFromCart()'><b>DeleteItemFromCart</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.CartTests.getAllCartItems()'><b>getAllCartItems</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTesting.createProductWithJson()'><b>createProductWithJson</b><br>Test class: testcases.ProductDataDrivenTesting<br>Parameters: {title=Sony Wireless Headphones, price=149.99, description=Wireless noise cancelling headphones, category=electronics, image=https://example.com/images/sony-headphones.jpg}</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProductDataDrivenTesting@1df8da7a</td></tr>
+<tr>
+<td title='testcases.CartTests.getCartByUserID()'><b>getCartByUserID</b><br>Test class: testcases.CartTests</td>
+<td></td>
+<td>0</td>
+<td>testcases.CartTests@2d29b4ee</td></tr>
+</table><p>
+</body>
+</html>
